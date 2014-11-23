@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>The great inventions and discoveries</title>
+  <meta charset="utf-8">
+  <meta name="description" content="The great inventions and discoveries">
+  <meta name="author" content="data2knowledge">
+  <meta name="generator" content="slidify" />
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta http-equiv="X-UA-Compatible" content="chrome=1">
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/default.css" media="all" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/phone.css" 
+    media="only screen and (max-device-width: 480px)" >
+  <link rel="stylesheet" href="libraries/frameworks/io2012/css/slidify.css" >
+  <link rel="stylesheet" href="libraries/highlighters/highlight.js/css/tomorrow.css" />
+  <base target="_blank"> <!-- This amazingness opens all links in a new tab. -->  <link rel=stylesheet href="./assets/css/ribbons.css"></link>
+
+  
+  <!-- Grab CDN jQuery, fall back to local if offline -->
+  <script src="http://ajax.aspnetcdn.com/ajax/jQuery/jquery-1.7.min.js"></script>
+  <script>window.jQuery || document.write('<script src="libraries/widgets/quiz/js/jquery.js"><\/script>')</script> 
+  <script data-main="libraries/frameworks/io2012/js/slides" 
+    src="libraries/frameworks/io2012/js/require-1.0.8.min.js">
+  </script>
+  
+  
+
+</head>
+<body style="opacity: 0">
+  <slides class="layout-widescreen">
+    
+    <!-- LOGO SLIDE -->
+        <slide class="title-slide segue nobackground">
+  <hgroup class="auto-fadein">
+    <h1>The great inventions and discoveries</h1>
+    <h2>a tale told by data</h2>
+    <p>data2knowledge<br/>the student on coursera</p>
+  </hgroup>
+  <article></article>  
+</slide>
+    
+
+    <!-- SLIDES -->
+    <slide class="" id="slide-1" style="background:;">
+  <hgroup>
+    <h2>The great inventions and scientific discoveries</h2>
+  </hgroup>
+  <article data-timings="">
+    <h3>The Goal</h3>
+
+<p>The aim of this presentation is to present the Shiny application created for the course project of the Creating Data Products course in the Data Science Specialization.</p>
+
+<h3>Synopsis</h3>
+
+<p>The great inventions and scientific discoveries explorer is based on the data of Yearly Numbers of Important Discoveries from Datasets package.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="id" style="background:;">
+  <hgroup>
+    <h3>Data Processing</h3>
+  </hgroup>
+  <article data-timings="">
+    <pre><code class="r">library(datasets)
+data(discoveries)
+str(discoveries)
+</code></pre>
+
+<pre><code>##  Time-Series [1:100] from 1860 to 1959: 5 3 0 2 0 3 2 3 6 1 ...
+</code></pre>
+
+<p><strong>discoveries</strong> data set is the numbers of great inventions and scientific discoveries in each year from 1860 to 1959. </p>
+
+<h3>Ref:</h3>
+
+<p>For more information for datasetst,  click the URI below.<br>
+(<a href="http://vincentarelbundock.github.io/Rdatasets/doc/datasets/discoveries.html">http://vincentarelbundock.github.io/Rdatasets/doc/datasets/discoveries.html</a>)</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="id" style="background:;">
+  <hgroup>
+    <h3>The great inventions and scientific discoveries explorer</h3>
+  </hgroup>
+  <article data-timings="">
+    <p><img src="assets/fig/unnamed-chunk-2-1.png" alt="plot of chunk unnamed-chunk-2"> </p>
+
+<p>To see the application, click the URI below.<br>
+(<a href="https://data2knowledge.shinyapps.io/project/">https://data2knowledge.shinyapps.io/project/</a>)</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+<slide class="" id="id" style="background:;">
+  <hgroup>
+    <h3>The best year of inventions and scientific discoveries</h3>
+  </hgroup>
+  <article data-timings="">
+    <p>The maximum discoveries</p>
+
+<pre><code class="r">max(discoveries)
+</code></pre>
+
+<pre><code>## [1] 12
+</code></pre>
+
+<p>The minimum discoveries</p>
+
+<pre><code class="r">min(discoveries)
+</code></pre>
+
+<pre><code>## [1] 0
+</code></pre>
+
+<p>There were 12 discoveries in 1885 and it was the best year of inventions and scientific discoveries. And there was no discoveries in 1862, 1864, 1881, 1904, 1917, 1933, 1956, 1957, 1959.</p>
+
+  </article>
+  <!-- Presenter Notes -->
+</slide>
+
+    <slide class="backdrop"></slide>
+  </slides>
+  <div class="pagination pagination-small" id='io2012-ptoc' style="display:none;">
+    <ul>
+      <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=1 title='The great inventions and scientific discoveries'>
+         1
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=2 title='Data Processing'>
+         2
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=3 title='The great inventions and scientific discoveries explorer'>
+         3
+      </a>
+    </li>
+    <li>
+      <a href="#" target="_self" rel='tooltip' 
+        data-slide=4 title='The best year of inventions and scientific discoveries'>
+         4
+      </a>
+    </li>
+  </ul>
+  </div>  <!--[if IE]>
+    <script 
+      src="http://ajax.googleapis.com/ajax/libs/chrome-frame/1/CFInstall.min.js">  
+    </script>
+    <script>CFInstall.check({mode: 'overlay'});</script>
+  <![endif]-->
+</body>
+  <!-- Load Javascripts for Widgets -->
+  
+  <!-- LOAD HIGHLIGHTER JS FILES -->
+  <script src="libraries/highlighters/highlight.js/highlight.pack.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script>
+  <!-- DONE LOADING HIGHLIGHTER JS FILES -->
+   
+  </html>

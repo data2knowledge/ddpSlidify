@@ -1,0 +1,68 @@
+---
+title       : The great inventions and discoveries
+subtitle    : a tale told by data
+author      : data2knowledge
+job         : the student on coursera
+framework   : io2012   # {io2012, html5slides, shower, dzslides, ...}
+highlighter : highlight.js  # {highlight.js, prettify, highlight}
+hitheme     : tomorrow      # 
+widgets     : []            # {mathjax, quiz, bootstrap}
+mode        : selfcontained # {standalone, draft}
+knit        : slidify::knit2slides
+---
+
+## The great inventions and scientific discoveries
+
+### The Goal 
+
+The aim of this presentation is to present the Shiny application created for the course project of the Creating Data Products course in the Data Science Specialization.
+
+### Synopsis
+
+The great inventions and scientific discoveries explorer is based on the data of Yearly Numbers of Important Discoveries from Datasets package.
+
+--- . Calss #id
+
+### Data Processing
+
+```{r}
+library(datasets)
+data(discoveries)
+str(discoveries)
+```
+
+**discoveries** data set is the numbers of great inventions and scientific discoveries in each year from 1860 to 1959. 
+
+### Ref:
+For more information for datasetst,  click the URI below.  
+(http://vincentarelbundock.github.io/Rdatasets/doc/datasets/discoveries.html)
+
+--- . Calss #id
+### The great inventions and scientific discoveries explorer
+```{r fig.width=13, fig.height=6,echo=FALSE}
+library(png)
+library(grid)
+img <- readPNG("discoveries.png")
+grid.raster(img)
+```
+
+To see the application, click the URI below.  
+(https://data2knowledge.shinyapps.io/project/)
+
+
+--- . Calss #id
+
+### The best year of inventions and scientific discoveries
+
+The maximum discoveries
+```{r}
+max(discoveries)
+```
+
+
+The minimum discoveries
+```{r}
+min(discoveries)
+```
+
+There were `r max(discoveries) ` discoveries in `r which(discoveries %in% max(discoveries))+1859` and it was the best year of inventions and scientific discoveries. And there was no discoveries in `r which(discoveries %in% min(discoveries))+1859 `.
